@@ -1,0 +1,10 @@
+label1{
+    color: blanchedalmond;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    background-color: rgb(18, 117, 117);
+    justify-content: center;
+}
