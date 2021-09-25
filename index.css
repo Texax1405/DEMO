@@ -140,7 +140,7 @@ ul li a:hover::before{
 }
 .div4{
     position: absolute;
-    top: 40%;
+    top: 40.5%;
     left: 0px;
     height: 3%;
     width: 100%;
@@ -149,6 +149,13 @@ ul li a:hover::before{
     display: flex;
     z-index: 1;
 }
-
+@font-face {
+    font-family: "robot";
+    src: url(MemphisRiver.otf);
+}
+h1{
+    font-family: "robot";
+    font-size: 4em;
+}
 
 
