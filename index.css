@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+   overflow: hidden;
 }
 section{
     position: absolute;
@@ -27,13 +27,14 @@ section::before{
 }
 section .div1{
     position: absolute;
-    filter: blur(150px)
+    filter: blur(150px);
 }
 section .div1:nth-child(1){
     background: #ff4f8b;
     width: 600px;
     height: 600px;
     top: -300px;
+    overflow: hidden;
 }
 section .div1:nth-child(2){
     background: #00d2ff;
@@ -48,6 +49,7 @@ section .div1:nth-child(3){
     height:300px;
     bottom: 50px;
     right: 0px;
+    
 }
 ul{
     position: relative;
@@ -56,7 +58,6 @@ ul{
 }
 ul li{
     position: relative;
-    list-style: none;
     margin: 10px;
     list-style: none;
 }
@@ -98,3 +99,56 @@ ul li a::before{
 ul li a:hover::before{
     transform: skewX(45deg) translateX(-150px);
 }
+.div2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+}
+.div2 .bimg{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 1000px;
+    box-shadow: 0 50px 45px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.div3{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 0;
+}
+.div3 .bgimg{
+    position: relative;
+    width: 258px;
+    height: 258px;
+    border-radius: 1000px;
+    box-shadow: 0 50px 45px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+.div4{
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    height: 3%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+}
+
+
+
